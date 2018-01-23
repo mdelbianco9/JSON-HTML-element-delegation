@@ -42,7 +42,25 @@
   
 // }
 
+function clickme() {
+  console.log("Function Works")
 
+  var idlist = ['index2', 'index3']
+
+  for (i = 0; i < idlist.length; i++) {
+    var mydiv = document.getElementById('mydiv');
+
+    var id = document.getElementById(idlist[i]);
+      
+      console.log(id)
+    
+
+    
+  }
+
+  
+  
+}
 
 
 
