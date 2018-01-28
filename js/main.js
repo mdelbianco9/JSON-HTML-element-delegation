@@ -66,14 +66,16 @@
 // seclect the document and listen for clicks on any a tags
 $(document).ready(function() {
   $('A').click(function(event){
-    var x = document.getElementsByTagName("A")[0];
-    // var x = event.target.tagName;
-    console.log("Tage name " + x)
-
-    if (x.id === "index2") { 
-      $('#mydiv').html("An a tag was clicked and its Id matches that of the array so Now I am showing you my happy dance")
-    }
+  	var y = document.getElementsByTagName("A");
+  for (i = 0; i < y.length; i++) {
+    var x = document.getElementsByTagName("A")[i];
+    console.log(x);
     
+    if (x.id === "index2") { 
+      // document.getElementById('mydiv').innerHTML = "An a tag was clicked and its Id matches that of the array so Now I am showing you my happy dance";
+      console.log("ID is found");
+    }
+   }
   })
 })
 
