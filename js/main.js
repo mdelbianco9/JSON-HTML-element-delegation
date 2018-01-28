@@ -70,6 +70,10 @@ var idList = [
 
 {
 	id: "index3"
+},
+
+{
+	id: "index4"
 }
 
 ];
@@ -79,16 +83,18 @@ $(document).ready(function() {
   $('A').click(function(event){
 
 var solve = function() {
-
+// This stores the value from the for loop, which is an array of the ids 
+var h = [];
+	// Gets the Id of each A tag and adds it to the h array above. 
 	for (i = 0; i < idList.length; i++) {
 		var y = document.getElementsByTagName("A")[i].id;
-		var h = [];
-		var g = h.push(y);
-		console.log(y);
+		var c = h.push(y);
 	}
+		console.log(h);
 }
 
 return solve();
+
 
  
  
