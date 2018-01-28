@@ -91,6 +91,12 @@ var h = [];
 		var c = h.push(y);
 	}
 		console.log(h);
+	for (i = 0; i < idList.length; i++) {
+		if(h[0] === idList[i].id) {
+			console.log("Getting closer")
+		}
+	}
+		
 }
 
 return solve();
@@ -108,7 +114,18 @@ return solve();
 // if the id is equal to an id in the object then return data to the new HTMl document
 
 
+$('#index2').click(function() {
+	console.log("Index2 was clicked")
+	$('#mydiv').html("Hello World this might work");
+})
 
+$('#index3').click(function() {
+	console.log("Index3 was clicked")
+})
+
+$('#index4').click(function() {
+	console.log("Index4 was clicked")
+})
 
 
 
